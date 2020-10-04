@@ -11,7 +11,8 @@
     <title>PratyakshM's website</title>
   </head>
 
-  <body>
+  <body onload="loader()">
+    <div id="loading"></div>
         										<!-- Header Part -->
 
 <div class="header" id="home">
@@ -38,7 +39,7 @@
   <section class="heaer-section">
  	<div class="center-div"> 	
 	  <div class="card bg-dark text-white" style="width: 20rem;background-image:url('images/cardbg.jpg');">
-	  	<div class="card-header align-items-center" >
+	  	<div class="card-header align-items-center aa " >
 	  		<img class="card-img-top mx-auto my-3 d-flex" src="images/pratyakshm.png" alt="Card image cap" style="height:100px; width:100px; border-radius:50%">
 	  		<h3 class="font-weight-bold text-white text-center">Pratyaksh Mehrotra</h3>
 	  	</div>
@@ -82,6 +83,14 @@
 	</section>
 
 	<h4 class="text-white text-center font-weight-bold"> Made with ❤️ by <a href="https://t.me/AffanTheBest"> Affan </a></h4>
+	
+	<script>
+	  var preloader= document.getElementById('loading');
+	  function loader(){
+	    preloader.style.display = 'none';
+	  }
+	  
+	</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
